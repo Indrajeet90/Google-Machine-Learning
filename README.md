@@ -34,7 +34,24 @@ HAVING
    num_flights > 100   
 ORDER BY     
    departure_delay ASC   
- 
- 
+
+
+query to find the airport pair (departure and arrival airport) that had the maximum number of flights between them.     
+#standardSQL  
+SELECT  
+  departure_airport,  
+  arrival_airport,  
+  COUNT(1) AS num_flights   
+FROM   
+  `bigquery-samples.airline_ontime_data.flights   `
+GROUP BY   
+  departure_airport,   
+  arrival_airport   
+ORDER BY  
+  num_flights DESC  
+LIMIT   
+  10    
   
-  
+**Draw graphs in Cloud Datalab** 
+We will click on Web Preview icon on the top-right corner of the Cloud Shell ribbon and change the port to 8081.
+I the datalab notebook, we are going to create a new notebook and save our BigQuery to Pandas dataframe.
