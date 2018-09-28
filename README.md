@@ -55,3 +55,20 @@ LIMIT
 **Draw graphs in Cloud Datalab** 
 We will click on Web Preview icon on the top-right corner of the Cloud Shell ribbon and change the port to 8081.
 I the datalab notebook, we are going to create a new notebook and save our BigQuery to Pandas dataframe.
+
+
+
+**Invoking Machine Learning APIs**
+
+We will complete these tasks with the help of Machine Learning APIs from Googla datalab.
+and then invoke ML APIs from Datalab to carry out some representative tasks:  
+
+..Vision API to detect text in an image   
+..Translate API to translate that text into English   
+..Natural Language API to find the sentiment of some famous quotes  
+..Speech API to transcribe an audio file   
+
+To launch Cloud Datalab we will follow the below steps:   
+1. Open Cloud Shell   
+2. See the list of zones (Type: gcloud compute zones list)   
+3. Connect to the zone ( Type: datalab create mydatalabvm --zone <ZONE>)  
